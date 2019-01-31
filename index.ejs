@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Symptom checker</title>
+    <style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: absolute;
+  right: 0;
+  margin-right: 200px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+    input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body style="background-image:url(https://ak4.picdn.net/shutterstock/videos/15179134/thumb/10.jpg);background-size:cover;background-repeat:no-repeat;">
+    <div style="margin-top:22%;">
+  <form action="/doctor" method="POST" class="container">
+      
+    Enter Symptom
+    <input type="text" list="browsers" name="data" id="data">
+    <datalist id="browsers">
+    <option value="Abdonimal pain">
+    <option value="Anxiety">
+    <option value="Back pain">
+    <option value="Burning eyes">
+    <option value="Chest pain">
+    <option value="Cheek swelling">
+    <option value="Chills">
+    <option value="Cough">
+     <option value="Headache">   
+  </datalist>
+    <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+    
+</body>
+</html>
